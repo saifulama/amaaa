@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>aboutsepuama</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 500px; /* Set your desired width here */
+            max-width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 90px;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .fade {
+            animation: fadeEffect 3s ease-in-out;
+        }
+        @keyframes fadeEffect {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">saifulama</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">My Friend</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Ambition</a></li>
+                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">My...</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Hobby</a></li>
+                                <li><a class="dropdown-item" href="portfolio-item.html">Family</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bolder">My Family</h1>
+                            <p class="lead fw-normal text-muted mb-0">"We may be imperfect, but in this family, we are perfectly united by love."</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slideshow Container -->
+               <!-- Slideshow Container -->
+				<!-- Slideshow Container -->
+				<div class="slideshow-container">
+					<img src="assets/fam1.png" class="slides fade" alt="Teacher Image">
+					<img src="assets/fam2.png" class="slides fade" alt="Slide 2">
+					<img src="assets/fam3.png" class="slides fade" alt="Slide 3">
+					<img src="assets/fam4.png" class="slides fade" alt="Slide 4">
+					<img src="assets/fam5.png" class="slides fade" alt="Slide 5">
+					<img src="assets/fam6.png" class="slides fade" alt="Slide 6">
+					<img src="assets/fam7.png" class="slides fade" alt="Slide 7">
+					<img src="assets/fam8.png" class="slides fade" alt="Slide 8">
+					<img src="assets/fam10.png" class="slides fade" alt="Slide 9">
+					<img src="assets/fam11.png" class="slides fade" alt="Slide 10">
+				</div>
+
+
+
+                <div class="row gx-5 justify-content-center mt-5">
+                    <div class="col-lg-6">
+                        <div class="text-center mb-5">
+                            <p class="lead fw-normal text-muted">
+"I have 7 siblings: 5 brothers and 2 sisters. 6 of them are already married. I am the only one who is not married. I have 13 nieces and nephews. I love them all."</p>
+                            <a class="text-decoration-none" href="index.html">
+                                Go Back To About Me 
+                                <i class="bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">© 2024 22B10I021saifulama. All Rights Reserved</div></div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Slideshow JS -->
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slides");
+            slides.forEach(slide => slide.style.display = "none");
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change slide every 3 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
